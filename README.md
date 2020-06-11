@@ -44,7 +44,7 @@ async function example() {
 
 ### ES Modules
 ```javascript
-import { encrypt, decrypt } from '@joph-auth/nd-aes-crypto/dist/lib-esm';
+import { encrypt, decrypt } from '@joph-auth/nd-aes-webcrypto/dist/lib-esm';
 
 async function example() {
   const cipher = await encrypt('plain text', 'password');
