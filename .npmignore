@@ -1,0 +1,5 @@
+.parcel-cache
+src
+.gitignore
+yarn.lock
+tsconfig.json

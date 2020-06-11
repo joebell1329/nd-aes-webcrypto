@@ -1,0 +1,32 @@
+{
+  "name": "@joph-auth/nd-aes-webcrypto",
+  "version": "1.0.0",
+  "description": "AES-GCM encryption with PBKDF2 derived keys using the Web Crypto API",
+  "main": "dist/lib-cjs/index.js",
+  "types": "dist/lib-cjs/index.d.ts",
+  "scripts": {
+    "clean": "rimraf .parcel-cache && rimraf dist",
+    "prepublishOnly": "yarn clean && yarn build",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:web && yarn build:web:min",
+    "build:cjs": "tsc",
+    "build:esm": "tsc -m ES2020 --outDir dist/lib-esm",
+    "build:web": "parcel build src/index.ts --public-url . --out-dir dist/web-bundle --out-file dist/web-bundle/nd-aes-crypto.js --global ndAesCrypto --cache-dir .parcel-cache --no-minify",
+    "build:web:min": "parcel build src/index.ts --public-url . --out-dir dist/web-bundle --out-file dist/web-bundle/nd-aes-crypto.min.js --global ndAesCrypto --cache-dir .parcel-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joebell1329/nd-aes-webcrypto"
+  },
+  "keywords": [
+    "AES",
+    "PBKDF2",
+    "crypto"
+  ],
+  "author": "Joe Bell",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
+  }
+}
