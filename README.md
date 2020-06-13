@@ -9,6 +9,8 @@ and therefore can only be used where `window.crypto` and `window.crypto.subtle` 
 For compatibility with the [NodeJS Crypto module](https://nodejs.org/api/crypto.html), 
 you should use `@joph-auth/nd-aes-nodecrypto` instead.
 
+**Note: The web and node versions of this package are fully compatible with each other.**
+
 **WARNING: This has been created solely for educational purposes and 
 should not be used to encrypt sensitive data in real world applications.**
 
