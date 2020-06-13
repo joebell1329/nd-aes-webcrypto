@@ -1,6 +1,6 @@
 {
   "name": "@joph-auth/nd-aes-webcrypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AES-GCM encryption with PBKDF2 derived keys using the Web Crypto API",
   "main": "dist/lib-cjs/index.js",
   "types": "dist/lib-cjs/index.d.ts",
